@@ -11,13 +11,14 @@ contract HelloWorld{
 
     // This is the constructor whose code is
     // run only when the contract is created.
-    // recommended practice is to make constructor
+    // Recommended practice is to make constructors
     // without constructor parameters
     function HelloWorld(string _greeting){
         greeting = _greeting;
     } // end of constructor
 
     event GreetingChanged(string NewGreetingText, uint NewGreetingNumber);
+    //
     function changeGreeting(string _greeting){
         greeting = _greeting;
         numberOfChanges++;
